@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Matricula</title>
+  <!-- Incluye los archivos CSS de Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Incluye el archivo JavaScript de Bootstrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body class="container text-center">
+  <br>
+  <h1>Sistema de matricula</h1>
+  <br>
+    <% lista.forEach(function(detalle) { %>
+      <p>
+        <%= detalle.detalle %> : <%= detalle.valor %>
+      </p>
+      <% }); %>
+  <br>
+  <a href="/matricular" type="button" class="btn btn-primary">Finalizar</a>
+</body>
+
+</html>

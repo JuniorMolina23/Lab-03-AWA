@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Matricula</title>
+    <!-- Incluye los archivos CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Incluye el archivo JavaScript de Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body class="container text-center">
+    <br>
+    <h1>Sistema de matricula</h1>
+    <br>
+    <form method="POST" action="/pago">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="tipo" value="tarjeta">
+            <label class="form-check-label" for="flexRadioDefault1">
+                Tarjeta
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="tipo" checked value="efectivo">
+            <label class="form-check-label" for="flexRadioDefault2">
+                Efectivo
+            </label>
+        </div>
+        <br>
+        <input type="submit" class=" btn btn-primary" value="siguiente">
+    </form>
+</body>
+
+</html>

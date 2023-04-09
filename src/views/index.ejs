@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>matricula</title>
+  <!-- Incluye los archivos CSS de Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Incluye el archivo JavaScript de Bootstrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body class="text-center">
+  <br>
+  <h1>Sistema de matricula</h1>
+  <br>
+  <form method="POST" action="/cursos">
+    <label>Seleccione el curso que desea:</label><br>
+    <select name="seleccion" class="form-select" aria-label="Default select example">
+        <option selected> Cursos disponibles </option>
+        <option value="java">Java</option>
+        <option value="php">PHP</option>
+        <option value=".net">.NET</option>
+    </select>
+    <br><br>
+    <input type="submit" class=" btn btn-primary" value="siguiente">
+  </form>
+</body>
+</html>
